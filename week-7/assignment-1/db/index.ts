@@ -14,8 +14,3 @@ const todoSchema = new mongoose.Schema({
 
 export const User = mongoose.model('User', userSchema);
 export const Todo = mongoose.model('Todo', todoSchema);
-
-// export default {
-//     User,               //Exporting can be done this way too
-//     Todo
-// }

@@ -5,7 +5,7 @@ import mongoose from "mongoose";
 const port = 3000;
 import authRoutes from "./routes/auth";
 import todoRoutes from "./routes/todo";
-const cors = require("cors");
+import cors from "cors";
 
 app.use(cors());
 app.use(express.json());
