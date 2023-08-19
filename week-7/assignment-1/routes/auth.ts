@@ -29,6 +29,7 @@ const router = express.Router();
   });
 
     router.get('/me', authenticateJwt, async (req, res) => {
+      const userId = req.headers.["userId"];
       const user = await User.findOne({ _id: req.userId });
       if (user) {
         res.json({ username: user.username });
